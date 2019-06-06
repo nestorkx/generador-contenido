@@ -1,0 +1,23 @@
+{
+  "name": "generador-contenido",
+  "version": "1.0.0",
+  "description": "Generador de contenido HTML, CSS y JS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nestorkx/generador-contenido.git"
+  },
+  "author": "Nestor Kauil (contacto@nestorkauil.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nestorkx/generador-contenido/issues"
+  },
+  "homepage": "https://github.com/nestorkx/generador-contenido#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
