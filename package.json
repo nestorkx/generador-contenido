@@ -18,6 +18,19 @@
   },
   "homepage": "https://github.com/nestorkx/generador-contenido#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "autoprefixer": "^9.6.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "pixrem": "^5.0.0",
+    "postcss-discard-comments": "^4.0.2",
+    "gulp-rimraf": "^0.2.2"
   }
 }
