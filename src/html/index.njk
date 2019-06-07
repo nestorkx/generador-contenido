@@ -1,0 +1,17 @@
+{#
+  Nunjucks Templating!
+  Homepage: https://mozilla.github.io/nunjucks/
+  Docs: https://mozilla.github.io/nunjucks/api.html
+#}
+
+{% extends 'layouts/home.njk' %}
+
+{% block title %}Este es el titulo del template{% endblock %}
+
+{% block stylesheets %}
+  <link rel="stylesheet" href="assets/css/main.css">
+{% endblock %}
+
+{% block content %}
+  <h1>Es es el contenido del template</h1>
+{% endblock %}
