@@ -15,6 +15,7 @@ const comments = require('postcss-discard-comments')
 const cssnano = require('cssnano')
 const nunjucks = require('gulp-nunjucks-render')
 const rimraf = require('rimraf')
+const data = require('gulp-data')
 
 const paths = {
   here: './',
@@ -39,7 +40,7 @@ function clean(cb) {
 
 function watch() {
   gulp.watch([paths.scss_source], scss)
-  gulp.watch(['src/html/*njk'], nunjucksRender)
+  gulp.watch([paths.html_source], nunjucksRender)
 }
 
 function nunjucksRender() {
