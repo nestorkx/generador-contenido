@@ -1,0 +1,72 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide SCSS Mixins.
+// -----------------------------------------------------------------------------
+// SCSS Mixins
+
+/// Event wrapper
+/// @author Nestor Kauil
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Nestor Kauil
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $tablet - 1px){
+    @content
+  }
+}
+
+
+
+@mixin tablet {
+  @media screen and (max-width: $tablet), print {
+    @content
+  }
+}
+
+
+
+@mixin tablet-only {
+  @media only screen and (min-width: $tablet) {
+    @content
+  }
+}
+
+
+
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content
+  }
+}
+
+
+
+@mixin desktop-only {
+  @media only screen and (min-width: $widescreen) {
+    @content
+  }
+}

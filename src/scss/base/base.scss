@@ -1,0 +1,16 @@
+
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+// SCSS Base
+
+/**
+ * Basic styles for links
+ */
+a {
+  text-decoration: none;
+
+  @include on-event {
+    text-decoration: underline;
+  }
+}
