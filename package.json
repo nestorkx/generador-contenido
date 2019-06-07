@@ -2,7 +2,6 @@
   "name": "generador-contenido",
   "version": "1.0.0",
   "description": "Generador de contenido HTML, CSS y JS",
-  "main": "index.js",
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build"
@@ -24,13 +23,14 @@
     "gulp": "^4.0.2",
     "gulp-connect": "^5.7.0",
     "gulp-copy": "^4.0.1",
+    "gulp-data": "^1.3.1",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
+    "gulp-rimraf": "^0.2.2",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "pixrem": "^5.0.0",
-    "postcss-discard-comments": "^4.0.2",
-    "gulp-rimraf": "^0.2.2"
+    "postcss-discard-comments": "^4.0.2"
   }
 }
